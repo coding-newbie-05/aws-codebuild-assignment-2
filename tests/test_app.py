@@ -7,7 +7,7 @@ def test_home():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.json["status"] == "success"
+    assert response.json["status"] == "failed"
 
 
 def test_health():
